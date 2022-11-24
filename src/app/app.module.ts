@@ -10,10 +10,15 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { NavigaionComponent } from './navigaion/navigaion.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const myRoute:Routes=[
   {
     path:"",
+    component:AdminLoginComponent
+  },
+  {
+    path:"add",
     component:AddEmployeeComponent
   },
   {
@@ -42,7 +47,8 @@ const myRoute:Routes=[
     AddEmployeeComponent,
     SearchEmployeeComponent,
     EditEmployeeComponent,
-    NavigaionComponent
+    NavigaionComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
